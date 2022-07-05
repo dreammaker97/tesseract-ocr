@@ -4,10 +4,10 @@ wget https://github.com/tesseract-ocr/tessdata/raw/main/eng.traineddata
 
 wget https://github.com/tesseract-ocr/tessdata/raw/main/vie.traineddata
 
-docker build -t tesseract-ocr .
+sudo docker build -t tesseract-ocr .
 
 check if the language data file is in /usr/share/tessdata directory:
-docker run --rm -it --name mytesseract -v "$PWD":/app -w /app tesseract-ocr ls  /usr/share/tessdata
+sudo docker run --rm -it --name mytesseract -v "$PWD":/app -w /app tesseract-ocr ls  /usr/share/tessdata
 
 wget https://i.imgur.com/qqaFQhu.png -O test1.png
-docker run --rm -it --name mytesseract -v "$PWD":/app -w /app tesseract-ocr tesseract test1.png out -l vie
+sudo docker run --rm -it --name mytesseract -v "$PWD":/app -w /app tesseract-ocr tesseract test1.png out -l vie
