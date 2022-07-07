@@ -1,4 +1,4 @@
-git clone https://github.com/clearlinux/dockerfiles.git
+git clone https://github.com/dreammaker97/tesseract-ocr
 
 wget https://github.com/tesseract-ocr/tessdata/raw/main/eng.traineddata
 
