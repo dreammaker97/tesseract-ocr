@@ -1,6 +1,3 @@
-wget https://github.com/tesseract-ocr/tessdata/raw/main/eng.traineddata
-wget https://github.com/tesseract-ocr/tessdata/raw/main/vie.traineddata
-
 FROM clearlinux:latest AS builder
 
 ARG swupd_args
